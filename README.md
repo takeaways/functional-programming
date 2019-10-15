@@ -6,6 +6,7 @@
 1. 좋은 프로그램은 사용성, 성능, 확장성, 기획 변경에 대한 대응력이 좋다.
 1. 이것들을 효율적이고 생상적으로 이루는 일이 성공적인 프로그래밍 이다.
 
+
 ## 함수형 프로그래밍 (평가시점..)
 ### 함수형 프로그래밍은 성공적이 프로그래밍을 위해 부수 효과를 미워하고 조합성을 강조하는 프로그래밍 패러다임이다.
 <br/>
@@ -93,5 +94,31 @@
   const add5 = add_maker(5);
   console.log(add5(10)); // 15
 
+  function f4(f1, f2, f3){
+    return f3(f1() + f2());
+  }
+  f4( function () {return 2;}, function() {return 3;}, function(a){return a*a});
 </code>
 </pre>
+
+## 요즘 개발 이야기
+<table>
+  <tr>
+    <th>재미 / 실시간성 </th><td> 라이브 방송, 실시간 댓글, 협업, 메신저</td>
+  </tr>
+  <tr>
+    <th>독창성 / 완성도 </th><td> 애니메이션, 무한 스크롤, 벽돌</td>
+  </tr>
+  <tr>
+    <th>더 많아져야하는 동시성</th><td> 비동기 I/O, CSP, Actor, STM...</td>
+  </tr>
+  <tr>
+    <th>더 빨라야하는 반응성 / 고가용성(절대 죽지않는 서비스)</th><td>ELB, Auto Scaling, OTP Supervisor.. </td>
+  </tr>
+  <tr>
+    <th>대용량 / 정확성 / 병렬성</th><td> </td>
+  </tr>
+  <tr>
+    <th>복잡도 / MSA / ...</th><td> </td>
+  </tr>
+</table>
