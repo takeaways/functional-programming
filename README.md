@@ -102,6 +102,7 @@
 </pre>
 
 ## 요즘 개발 이야기
+#### 그렇지만 타협할 수 없는 생산성
 <table>
   <tr>
     <th>재미 / 실시간성 </th><td> 라이브 방송, 실시간 댓글, 협업, 메신저</td>
@@ -116,9 +117,9 @@
     <th>더 빨라야하는 반응성 / 고가용성(절대 죽지않는 서비스)</th><td>ELB, Auto Scaling, OTP Supervisor.. </td>
   </tr>
   <tr>
-    <th>대용량 / 정확성 / 병렬성</th><td> </td>
+    <th>대용량 / 정확성 / 병렬성</th><td>MapReduce, Clojure Reducers... </td>
   </tr>
   <tr>
-    <th>복잡도 / MSA / ...</th><td> </td>
+    <th>복잡도 / MSA / ...</th><td> 많아지고 세밀해지는 도구들</td>
   </tr>
 </table>
