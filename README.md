@@ -131,3 +131,13 @@
     <th>복잡도 / MSA / ...</th><td> 많아지고 세밀해지는 도구들</td>
   </tr>
 </table>
+
+##### 다형성
+1. 매서드 : 객체의 상태에 따른 결과가 달라진다. 순수 함수가 아니다.
+ - 매서드는 객체 지향이다.
+<pre>
+<code>
+  const all = documet.querySelectAll("*");
+  all.map // map is not a function 메서드는 다형성을 지원하기 어렵다.
+</code>
+</pre>
